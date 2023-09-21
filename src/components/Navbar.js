@@ -5,13 +5,13 @@ export default function Navbar(props) {
     <>
       <nav className={`navbar navbar-expand-lg bg-${props.darkMode}`}>
         <div className="container-fluid">
-          <a
+          <p
             className={`navbar-brand text-${props.darkMode === 'dark' ? 'white' : 'dark'}`}
-            href="https://text-utill-react.onrender.com"
+            
             // Make sure to sanitize external URLs
           >
             {props.title}
-          </a>
+          </p>
           <button
             className="navbar-toggler"
             type="button"
@@ -26,14 +26,14 @@ export default function Navbar(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a
+                <p
                   className={`nav-link active text-${props.darkMode === 'dark' ? 'white' : 'dark'}`}
                   aria-current="page"
-                  href="/"
+                  
                   // Ensure any dynamic data in the href is properly sanitized
                 >
                   Home
-                </a>
+                </p>
               </li>
               {/* ... Other nav items */}
               <li className="nav-item">
